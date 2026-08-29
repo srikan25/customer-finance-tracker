@@ -1,0 +1,291 @@
+/* =========================
+   EMI PROGRESS
+========================= */
+
+.emi-progress-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.emi-progress-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.emi-progress-grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  padding: 12px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  background: #ffffff;
+}
+
+.emi-progress-grid span {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+.emi-progress-grid strong {
+  font-size: 15px;
+  color: #111827;
+}
+
+.next-emi-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+
+  padding: 13px 14px;
+
+  border-radius: 12px;
+
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+}
+
+.next-emi-box span {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.next-emi-box strong {
+  font-size: 14px;
+  color: #111827;
+}
+
+.next-emi-box small {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* =========================
+   EMI SCHEDULE
+========================= */
+
+.emi-schedule-section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.emi-schedule-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.emi-schedule-title h3 {
+  margin: 0;
+
+  font-size: 16px;
+  color: #111827;
+}
+
+.emi-schedule-title p {
+  margin: 3px 0 0;
+
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+/* =========================
+   EMI GRID
+========================= */
+
+.emi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 9px;
+}
+
+/* =========================
+   EMI CARD
+========================= */
+
+.emi-card {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 4px;
+
+  padding: 10px 5px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  text-align: center;
+}
+
+.emi-date {
+  font-size: 10px;
+  color: #6b7280;
+}
+
+.emi-number {
+  font-size: 13px;
+  color: #111827;
+}
+
+.emi-amount {
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.emi-status {
+  margin-top: 2px;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+/* =========================
+   UPCOMING
+========================= */
+
+.emi-card.upcoming {
+  background: #ffffff;
+}
+
+.emi-card.upcoming .emi-status {
+  color: #6b7280;
+}
+
+/* =========================
+   DUE TODAY
+========================= */
+
+.emi-card.due-today {
+  background: #fffbeb;
+
+  border-color: #fbbf24;
+}
+
+.emi-card.due-today .emi-status {
+  color: #b45309;
+}
+
+/* =========================
+   OVERDUE
+========================= */
+
+.emi-card.overdue {
+  background: #fef2f2;
+
+  border-color: #fca5a5;
+}
+
+.emi-card.overdue .emi-status {
+  color: #b91c1c;
+}
+
+/* =========================
+   PAID
+========================= */
+
+.emi-card.paid {
+  background: #f0fdf4;
+
+  border-color: #86efac;
+}
+
+.emi-card.paid .emi-status {
+  color: #15803d;
+}
+
+/* =========================
+   PARTIAL
+========================= */
+
+.emi-card.partial {
+  background: #eff6ff;
+
+  border-color: #93c5fd;
+}
+
+.emi-card.partial .emi-status {
+  color: #1d4ed8;
+}
+
+/* =========================
+   SETTLED
+========================= */
+
+.emi-card.settled {
+  background: #f3f4f6;
+
+  border-color: #d1d5db;
+}
+
+.emi-card.settled .emi-status {
+  color: #4b5563;
+}
+
+/* =========================
+   STATES
+========================= */
+
+.emi-loading,
+.emi-empty {
+  margin: 0;
+
+  padding: 18px;
+
+  text-align: center;
+
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.emi-error {
+  margin: 0;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  background: #fef2f2;
+
+  color: #b91c1c;
+
+  font-size: 13px;
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 360px) {
+  .emi-grid {
+    gap: 6px;
+  }
+
+  .emi-card {
+    padding: 9px 3px;
+  }
+
+  .emi-number {
+    font-size: 12px;
+  }
+
+  .emi-amount {
+    font-size: 11px;
+  }
+}

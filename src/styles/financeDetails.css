@@ -1,0 +1,802 @@
+.finance-details-page {
+  min-height: 100vh;
+
+  padding: 18px 14px 40px;
+
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+
+  box-sizing: border-box;
+}
+
+.finance-page-container {
+  width: 100%;
+  max-width: 720px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.finance-page-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.finance-back-button {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 6px;
+
+  min-height: 42px;
+
+  padding: 0 12px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 11px;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.finance-status-badge {
+  padding: 6px 11px;
+
+  border-radius: 999px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.finance-status-badge.active {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.finance-status-badge.closed {
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+/* HEADER */
+
+.finance-customer-header {
+  padding: 18px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  background: #ffffff;
+}
+
+.finance-customer-header span {
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  color: #6b7280;
+}
+
+.finance-customer-header h1 {
+  margin: 5px 0 0;
+
+  font-size: 22px;
+
+  color: #111827;
+}
+
+.finance-customer-header p {
+  margin: 5px 0 0;
+
+  font-size: 13px;
+
+  color: #6b7280;
+}
+
+/* MAIN AMOUNT */
+
+.finance-main-amount {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+
+  padding: 18px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  background: #ffffff;
+}
+
+.finance-main-amount span {
+  font-size: 12px;
+
+  color: #6b7280;
+}
+
+.finance-main-amount strong {
+  font-size: 28px;
+
+  color: #111827;
+}
+
+.finance-main-amount small {
+  font-size: 11px;
+
+  color: #9ca3af;
+}
+
+/* INFO */
+
+.finance-info-grid,
+.finance-payment-summary {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 10px;
+}
+
+.finance-info-grid > div,
+.finance-payment-summary > div {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+
+  padding: 13px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 13px;
+
+  background: #ffffff;
+}
+
+.finance-info-grid span,
+.finance-payment-summary span {
+  font-size: 11px;
+
+  color: #6b7280;
+}
+
+.finance-info-grid strong,
+.finance-payment-summary strong {
+  font-size: 14px;
+
+  color: #111827;
+
+  overflow-wrap: anywhere;
+}
+
+/* DATES */
+
+.finance-date-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 10px;
+}
+
+.finance-date-grid > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+
+  padding: 13px;
+
+  border-radius: 13px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e5e7eb;
+}
+
+.finance-date-grid span {
+  font-size: 11px;
+
+  color: #6b7280;
+}
+
+.finance-date-grid strong {
+  font-size: 13px;
+
+  color: #111827;
+}
+
+/* NEXT EMI */
+
+.finance-next-emi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  padding: 15px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+
+  background: #ffffff;
+}
+
+.finance-next-emi div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.finance-next-emi span {
+  font-size: 11px;
+
+  color: #6b7280;
+}
+
+.finance-next-emi strong {
+  font-size: 14px;
+
+  color: #111827;
+}
+
+/* EMI */
+
+.finance-emi-section {
+  padding: 16px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  background: #ffffff;
+}
+
+.finance-section-heading h2 {
+  margin: 0;
+
+  font-size: 17px;
+
+  color: #111827;
+}
+
+.finance-section-heading p {
+  margin: 3px 0 14px;
+
+  font-size: 11px;
+
+  color: #9ca3af;
+}
+
+.finance-emi-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 9px;
+}
+
+.finance-emi-card {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 4px;
+
+  padding: 10px 4px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  text-align: center;
+}
+
+.finance-emi-card > span {
+  font-size: 9px;
+
+  color: #6b7280;
+}
+
+.finance-emi-card > strong {
+  font-size: 12px;
+
+  color: #111827;
+}
+
+.finance-emi-card > b {
+  font-size: 11px;
+
+  color: #374151;
+}
+
+.finance-emi-card > small {
+  font-size: 8px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.finance-emi-card.upcoming small {
+  color: #6b7280;
+}
+
+.finance-emi-card.due-today {
+  background: #fffbeb;
+
+  border-color: #fbbf24;
+}
+
+.finance-emi-card.due-today small {
+  color: #b45309;
+}
+
+.finance-emi-card.overdue {
+  background: #fef2f2;
+
+  border-color: #fca5a5;
+}
+
+.finance-emi-card.overdue small {
+  color: #b91c1c;
+}
+
+.finance-emi-card.paid {
+  background: #f0fdf4;
+
+  border-color: #86efac;
+}
+
+.finance-emi-card.paid small {
+  color: #15803d;
+}
+
+.finance-emi-card.partial {
+  background: #eff6ff;
+
+  border-color: #93c5fd;
+}
+
+.finance-emi-card.partial small {
+  color: #1d4ed8;
+}
+
+.finance-emi-card.settled {
+  background: #f3f4f6;
+
+  border-color: #d1d5db;
+}
+
+.finance-emi-card.settled small {
+  color: #4b5563;
+}
+
+/* ACTIONS */
+
+.finance-actions button {
+  min-height: 46px;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+.finance-actions svg {
+  padding-top: 5px;
+}
+
+.finance-delete-button {
+  border: 1px solid #fecaca;
+
+  padding: 12px;
+
+  background: #fef2f2;
+
+  color: #b91c1c;
+}
+
+.finance-delete-button:disabled {
+  opacity: 0.5;
+}
+
+.finance-page-message,
+.finance-page-error {
+  padding: 20px;
+
+  text-align: center;
+
+  font-size: 13px;
+}
+
+.finance-page-error {
+  color: #b91c1c;
+}
+
+@media (max-width: 480px) {
+  .finance-details-page {
+    padding: 12px 10px 30px;
+  }
+
+  .finance-info-grid,
+  .finance-payment-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .finance-date-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 350px) {
+  .finance-emi-grid {
+    gap: 6px;
+  }
+
+  .finance-emi-card {
+    padding: 9px 2px;
+  }
+}
+
+.emi-card-top {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 4px;
+}
+
+.emi-card-top span {
+  font-size: 9px;
+
+  color: #6b7280;
+}
+
+.emi-paid-checkbox {
+  width: 17px;
+  height: 17px;
+
+  cursor: pointer;
+
+  accent-color: #16a34a;
+}
+
+.emi-paid-date {
+  margin: 2px 0 0;
+
+  font-size: 8px;
+
+  color: #15803d;
+}
+
+.payment-date-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px;
+
+  background: rgba(15, 23, 42, 0.55);
+}
+
+.payment-date-modal {
+  width: 100%;
+  max-width: 360px;
+
+  padding: 20px;
+
+  border-radius: 16px;
+
+  background: #ffffff;
+}
+
+.payment-date-modal h3 {
+  margin: 0 0 8px;
+}
+
+.payment-date-modal p {
+  margin: 0 0 16px;
+
+  color: #6b7280;
+}
+
+.payment-date-modal label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.payment-date-modal input {
+  width: 100%;
+
+  min-height: 44px;
+
+  padding: 10px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+
+  font-size: 16px;
+}
+
+.payment-date-modal small {
+  display: block;
+
+  margin-top: 6px;
+
+  color: #9ca3af;
+}
+
+.payment-date-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+
+  margin-top: 18px;
+}
+
+.payment-date-actions button {
+  min-height: 42px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.payment-date-actions button:first-child {
+  border: 1px solid #d1d5db;
+
+  background: #ffffff;
+}
+
+.payment-date-actions button:last-child {
+  border: none;
+
+  background: #111827;
+
+  color: #ffffff;
+}
+
+/* EMI Schedule Heading */
+
+.emi-schedule-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 14px;
+  padding-right: 42px;
+}
+
+.emi-schedule-heading h2 {
+  margin: 0;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  color: #111827;
+}
+
+/* Edit EMI Schedule Button */
+
+.edit-emi-schedule-button {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #374151;
+
+  cursor: pointer;
+
+  margin-top: -24px;
+  margin-left: 325px;
+}
+
+.edit-emi-schedule-button:hover {
+  background: #f3f4f6;
+}
+
+/* EMI Date Modal Overlay */
+
+.emi-date-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 18px;
+
+  background: rgba(15, 23, 42, 0.5);
+}
+
+/* EMI Date Modal */
+
+.emi-date-modal {
+  width: 100%;
+  max-width: 350px;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  border-radius: 16px;
+
+  background: #ffffff;
+}
+
+.emi-date-modal h3 {
+  margin: 0 0 8px;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  color: #111827;
+}
+
+.emi-date-modal p {
+  margin: 0 0 18px;
+
+  font-size: 13px;
+  line-height: 1.5;
+
+  color: #6b7280;
+}
+
+/* Date Input */
+
+.emi-date-modal input[type="date"] {
+  width: 100%;
+  min-height: 46px;
+
+  padding: 10px 12px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+
+  background: #ffffff;
+  color: #111827;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+.emi-date-modal input[type="date"]:focus {
+  border-color: #111827;
+}
+
+/* Modal Buttons */
+
+.emi-date-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+
+  margin-top: 18px;
+}
+
+.emi-date-actions button {
+  min-height: 42px;
+
+  border-radius: 10px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.emi-date-actions button:first-child {
+  border: 1px solid #d1d5db;
+
+  background: #ffffff;
+  color: #374151;
+}
+
+.emi-date-actions button:last-child {
+  border: none;
+
+  background: #111827;
+  color: #ffffff;
+}
+
+.emi-date-actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pay-total-button {
+  width: 100%;
+
+  margin-top: 10px;
+  padding: 8px 10px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #111827;
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.1s ease;
+}
+
+.pay-total-button:hover {
+  background: #1f2937;
+}
+
+.pay-total-button:active {
+  transform: scale(0.98);
+}
+
+.pay-total-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.settlement-note {
+  display: block;
+  margin-top: 4px;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  color: #6b7280;
+}
