@@ -6,7 +6,7 @@ import { supabase } from "../lib/supabase";
 
 import "../styles/financeDetails.css";
 
-const FinanceDetails = () => {
+const FinanceDetails = ({ toggleTheme, theme }) => {
   const { loanId } = useParams();
   const navigate = useNavigate();
 
@@ -896,6 +896,15 @@ const FinanceDetails = () => {
           </div>
         </div>
       )}
+
+      <button
+        type="button"
+        className="theme-toggle-btn"
+        onClick={toggleTheme}
+        aria-label="Toggle theme"
+      >
+        {theme === "light" ? "🌙" : "☀️"}
+      </button>
     </main>
   );
 };

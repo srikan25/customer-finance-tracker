@@ -1,0 +1,1083 @@
+/* =====================================================
+   CUSTOMER FINANCE TRACKER - DARK MODE
+   ===================================================== */
+
+/* =====================================================
+   GLOBAL
+   ===================================================== */
+
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+[data-theme="dark"] body {
+  margin: 0;
+  background: #0b1120;
+  color: #e5e7eb;
+}
+
+/* =====================================================
+   DASHBOARD
+   ===================================================== */
+
+[data-theme="dark"] .dashboard-page {
+  color: #e5e7eb;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(59, 130, 246, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(180deg, #0b1120 0%, #0f172a 45%, #111827 100%);
+}
+
+[data-theme="dark"] .dashboard-header h1 {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .dashboard-header p {
+  color: #94a3b8;
+}
+
+/* =====================================================
+   PROFILE
+   ===================================================== */
+
+[data-theme="dark"] .profile-button {
+  background: #f8fafc;
+  color: #0f172a;
+
+  border-color: #334155;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="dark"] .profile-button:hover {
+  background: #e2e8f0;
+  border-color: #475569;
+}
+
+[data-theme="dark"] .profile-menu {
+  background: #172033;
+
+  border-color: #334155;
+
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .profile-email {
+  color: #94a3b8;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .profile-menu button {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .profile-menu button:hover {
+  background: #1e293b;
+}
+
+[data-theme="dark"] .profile-menu button:last-child {
+  color: #f87171;
+}
+
+/* =====================================================
+   DASHBOARD SECTION
+   ===================================================== */
+
+[data-theme="dark"] .customer-section-heading h2 {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .customer-section-heading span {
+  background: #334155;
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .closed-customer-section {
+  border-color: #334155;
+}
+
+/* =====================================================
+   CUSTOMER CARD
+   ===================================================== */
+
+[data-theme="dark"] .customer-card {
+  background: linear-gradient(145deg, #172033 0%, #111827 100%);
+
+  border-color: #293548;
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.18),
+    0 12px 30px rgba(0, 0, 0, 0.14);
+}
+
+[data-theme="dark"] .customer-card:hover {
+  box-shadow:
+    0 7px 18px rgba(0, 0, 0, 0.25),
+    0 16px 34px rgba(0, 0, 0, 0.18);
+}
+
+[data-theme="dark"] .customer-card h3 {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .customer-card p {
+  color: #aebdce;
+}
+
+[data-theme="dark"] .customer-card strong {
+  color: #e2e8f0;
+}
+
+/* =====================================================
+   CUSTOMER CARD - OVERDUE / DUE
+   ===================================================== */
+
+[data-theme="dark"] .customer-card.overdue {
+  background: linear-gradient(145deg, #32171d 0%, #25151a 100%);
+
+  border-color: #7f1d1d;
+}
+
+[data-theme="dark"] .customer-card.due-today {
+  background: linear-gradient(145deg, #352d12 0%, #28230f 100%);
+
+  border-color: #a16207;
+}
+
+[data-theme="dark"] .customer-card.due-tomorrow {
+  background: linear-gradient(145deg, #2d2818 0%, #242014 100%);
+
+  border-color: #854d0e;
+}
+
+[data-theme="dark"] .customer-due-alert.overdue {
+  background: #451a1a;
+  color: #fca5a5;
+}
+
+[data-theme="dark"] .customer-due-alert.due-today {
+  background: #422f0b;
+  color: #fde68a;
+}
+
+[data-theme="dark"] .customer-due-alert.due-tomorrow {
+  background: #3a2b13;
+  color: #fcd34d;
+}
+
+/* =====================================================
+   NEXT EMI - DASHBOARD
+   ===================================================== */
+
+[data-theme="dark"] .customer-next-emi {
+  background: rgba(15, 23, 42, 0.7);
+  color: #aebdce;
+}
+
+[data-theme="dark"] .customer-next-emi strong {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .customer-next-emi > span:last-child {
+  color: #f8fafc;
+}
+
+/* =====================================================
+   CUSTOMER SEARCH
+   ===================================================== */
+
+[data-theme="dark"] .customer-search input {
+  background: #172033;
+
+  border-color: #334155;
+
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .customer-search input::placeholder {
+  color: #64748b;
+}
+
+[data-theme="dark"] .customer-search input:focus {
+  border-color: #64748b;
+}
+
+[data-theme="dark"] .customer-search-empty {
+  color: #94a3b8;
+}
+
+/* =====================================================
+   DASHBOARD ACTIONS
+   ===================================================== */
+
+[data-theme="dark"] .customer-actions {
+  border-color: #293548;
+}
+
+[data-theme="dark"] .edit-button {
+  background: #263244;
+  color: #dbe5f0;
+}
+
+[data-theme="dark"] .edit-button:hover {
+  background: #334155;
+}
+
+[data-theme="dark"] .customer-delete {
+  color: #64748b;
+}
+
+[data-theme="dark"] .customer-delete:hover {
+  background: #3b181d;
+  color: #f87171;
+}
+
+[data-theme="dark"] .aadhaar-eye-button {
+  color: #64748b;
+}
+
+[data-theme="dark"] .aadhaar-eye-button:hover {
+  background: #172554;
+  color: #60a5fa;
+}
+
+/* =====================================================
+   EMPTY / LOADING
+   ===================================================== */
+
+[data-theme="dark"] .empty-customers h2 {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .empty-customers p,
+[data-theme="dark"] .loading-customers {
+  color: #94a3b8;
+}
+
+/* =====================================================
+   FLOATING BUTTONS
+   ===================================================== */
+
+[data-theme="dark"] .floating-add-button {
+  background: #f8fafc;
+  color: #0f172a;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.35),
+    0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .floating-add-button:hover {
+  background: #e2e8f0;
+}
+
+[data-theme="dark"] .theme-toggle-btn {
+  background: #263244;
+  color: #ffffff;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.32);
+}
+
+/* =====================================================
+   PROFILE NAME / PASSWORD MODALS
+   ===================================================== */
+
+[data-theme="dark"] .profile-modal-overlay {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+[data-theme="dark"] .profile-modal {
+  background: #172033;
+
+  border: 1px solid #334155;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .profile-modal h3 {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .profile-modal input {
+  background: #0f172a;
+
+  border-color: #334155;
+
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .profile-modal input::placeholder {
+  color: #64748b;
+}
+
+[data-theme="dark"] .profile-modal-actions button {
+  background: #263244;
+  color: #e2e8f0;
+}
+
+/* =====================================================
+   ADD CUSTOMER
+   ===================================================== */
+
+[data-theme="dark"] .modal-overlay {
+  background: rgba(0, 0, 0, 0.68);
+}
+
+[data-theme="dark"] .add-customer-modal {
+  background: #172033;
+  color: #e5e7eb;
+
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .modal-header h2 {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .modal-close {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .add-customer-modal label {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .add-customer-modal input,
+[data-theme="dark"] .add-customer-modal textarea {
+  background: #0f172a;
+
+  border-color: #334155;
+
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .add-customer-modal input::placeholder,
+[data-theme="dark"] .add-customer-modal textarea::placeholder {
+  color: #64748b;
+}
+
+[data-theme="dark"] .add-customer-modal input:focus,
+[data-theme="dark"] .add-customer-modal textarea:focus {
+  border-color: #60a5fa;
+}
+
+[data-theme="dark"] .cancel-button {
+  background: #263244;
+  color: #e2e8f0;
+}
+
+/* =====================================================
+   EDIT CUSTOMER
+   ===================================================== */
+
+[data-theme="dark"] .edit-customer-overlay {
+  background: rgba(0, 0, 0, 0.68);
+}
+
+[data-theme="dark"] .edit-customer-modal {
+  background: #172033;
+
+  border-color: #334155;
+
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="dark"] .edit-customer-label {
+  color: #60a5fa;
+}
+
+[data-theme="dark"] .edit-customer-close {
+  background: #263244;
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .edit-customer-close:hover {
+  background: #334155;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .edit-form-group label {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .edit-form-group input,
+[data-theme="dark"] .edit-form-group textarea {
+  background: #0f172a;
+
+  border-color: #334155;
+
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .edit-form-group input::placeholder,
+[data-theme="dark"] .edit-form-group textarea::placeholder {
+  color: #64748b;
+}
+
+[data-theme="dark"] .edit-cancel-button {
+  background: #263244;
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .edit-cancel-button:hover {
+  background: #334155;
+}
+
+[data-theme="dark"] .edit-save-button {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* =====================================================
+   ADD FINANCE
+   ===================================================== */
+
+[data-theme="dark"] .finance-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+[data-theme="dark"] .add-finance-modal {
+  background: #172033;
+
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="dark"] .add-finance-header {
+  border-color: #334155;
+}
+
+[data-theme="dark"] .add-finance-header h1 {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .add-finance-header h2 {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .add-finance-header p {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .finance-close-button {
+  background: #263244;
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .finance-field label {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .finance-field label span {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .finance-field input {
+  background: #0f172a;
+
+  border-color: #334155;
+
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .finance-field input::placeholder {
+  color: #64748b;
+}
+
+[data-theme="dark"] .finance-field input:focus {
+  border-color: #64748b;
+
+  box-shadow: 0 0 0 3px rgba(148, 163, 184, 0.1);
+}
+
+[data-theme="dark"] .money-input > span,
+[data-theme="dark"] .interest-input > span {
+  color: #94a3b8;
+}
+
+/* Calculations */
+
+[data-theme="dark"] .finance-calculated-box {
+  background: #0f172a;
+
+  border-color: #334155;
+}
+
+[data-theme="dark"] .finance-calculated-box > span {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .finance-calculated-box strong {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .finance-calculated-box small {
+  color: #64748b;
+}
+
+[data-theme="dark"] .emi-calculated-box {
+  background: #111c30;
+}
+
+[data-theme="dark"] .finance-summary {
+  background: #0f172a;
+
+  border-color: #334155;
+}
+
+[data-theme="dark"] .finance-summary span {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .finance-summary strong {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .save-finance-button {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* =====================================================
+   FINANCE DETAILS PAGE
+   ===================================================== */
+
+[data-theme="dark"] .finance-details-page {
+  background: linear-gradient(180deg, #0b1120 0%, #111827 100%);
+
+  color: #e5e7eb;
+}
+
+/* Back */
+
+[data-theme="dark"] .finance-back-button {
+  background: #172033;
+
+  border-color: #334155;
+
+  color: #e2e8f0;
+}
+
+/* Customer Header */
+
+[data-theme="dark"] .finance-customer-header {
+  background: #172033;
+
+  border-color: #334155;
+}
+
+[data-theme="dark"] .finance-customer-header span {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .finance-customer-header h1 {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .finance-customer-header p {
+  color: #94a3b8;
+}
+
+/* Main Amount */
+
+[data-theme="dark"] .finance-main-amount {
+  background: #172033;
+
+  border-color: #334155;
+}
+
+[data-theme="dark"] .finance-main-amount span {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .finance-main-amount strong {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .finance-main-amount small {
+  color: #64748b;
+}
+
+/* Information */
+
+[data-theme="dark"] .finance-info-grid > div,
+[data-theme="dark"] .finance-payment-summary > div {
+  background: #172033;
+
+  border-color: #334155;
+}
+
+[data-theme="dark"] .finance-info-grid span,
+[data-theme="dark"] .finance-payment-summary span {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .finance-info-grid strong,
+[data-theme="dark"] .finance-payment-summary strong {
+  color: #f1f5f9;
+}
+
+/* Dates */
+
+[data-theme="dark"] .finance-date-grid > div {
+  background: #111c30;
+
+  border-color: #334155;
+}
+
+[data-theme="dark"] .finance-date-grid span {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .finance-date-grid strong {
+  color: #f1f5f9;
+}
+
+/* Next EMI */
+
+[data-theme="dark"] .finance-next-emi {
+  background: #172033;
+
+  border-color: #334155;
+}
+
+[data-theme="dark"] .finance-next-emi span {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .finance-next-emi strong {
+  color: #f8fafc;
+}
+
+/* =====================================================
+   EMI SECTION
+   ===================================================== */
+
+[data-theme="dark"] .finance-emi-section {
+  background: #172033;
+
+  border-color: #334155;
+}
+
+[data-theme="dark"] .finance-section-heading h2,
+[data-theme="dark"] .emi-schedule-heading h2 {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .finance-section-heading p {
+  color: #64748b;
+}
+
+/* Normal / Upcoming */
+
+[data-theme="dark"] .finance-emi-card {
+  background: #111827;
+
+  border-color: #334155;
+}
+
+[data-theme="dark"] .finance-emi-card > span,
+[data-theme="dark"] .emi-card-top span {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .finance-emi-card > strong {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .finance-emi-card > b {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .finance-emi-card.upcoming small {
+  color: #94a3b8;
+}
+
+/* Due Today */
+
+[data-theme="dark"] .finance-emi-card.due-today {
+  background: #332a0d;
+  border-color: #a16207;
+}
+
+[data-theme="dark"] .finance-emi-card.due-today small {
+  color: #fcd34d;
+}
+
+/* Overdue */
+
+[data-theme="dark"] .finance-emi-card.overdue {
+  background: #35171b;
+  border-color: #991b1b;
+}
+
+[data-theme="dark"] .finance-emi-card.overdue small {
+  color: #fca5a5;
+}
+
+/* Paid */
+
+[data-theme="dark"] .finance-emi-card.paid {
+  background: #10291c;
+  border-color: #166534;
+}
+
+[data-theme="dark"] .finance-emi-card.paid small,
+[data-theme="dark"] .emi-paid-date {
+  color: #86efac;
+}
+
+/* Partial */
+
+[data-theme="dark"] .finance-emi-card.partial {
+  background: #142447;
+  border-color: #1d4ed8;
+}
+
+[data-theme="dark"] .finance-emi-card.partial small {
+  color: #93c5fd;
+}
+
+/* Settled */
+
+[data-theme="dark"] .finance-emi-card.settled {
+  background: #242b36;
+  border-color: #475569;
+}
+
+[data-theme="dark"] .finance-emi-card.settled small {
+  color: #cbd5e1;
+}
+
+/* =====================================================
+   EDIT EMI BUTTON
+   ===================================================== */
+
+[data-theme="dark"] .edit-emi-schedule-button {
+  background: #263244;
+
+  border-color: #475569;
+
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .edit-emi-schedule-button:hover {
+  background: #334155;
+}
+
+/* =====================================================
+   PAYMENT DATE MODAL
+   ===================================================== */
+
+[data-theme="dark"] .payment-date-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+[data-theme="dark"] .payment-date-modal {
+  background: #172033;
+  color: #e5e7eb;
+
+  border: 1px solid #334155;
+}
+
+[data-theme="dark"] .payment-date-modal h3 {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .payment-date-modal p,
+[data-theme="dark"] .payment-date-modal small {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .payment-date-modal label {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .payment-date-modal input {
+  background: #0f172a;
+
+  border-color: #334155;
+
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .payment-date-actions button:first-child {
+  background: #263244;
+
+  border-color: #475569;
+
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .payment-date-actions button:last-child {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* =====================================================
+   EMI DATE MODAL
+   ===================================================== */
+
+[data-theme="dark"] .emi-date-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+[data-theme="dark"] .emi-date-modal {
+  background: #172033;
+
+  border: 1px solid #334155;
+}
+
+[data-theme="dark"] .emi-date-modal h3 {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .emi-date-modal p {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .emi-date-modal input[type="date"] {
+  background: #0f172a;
+
+  border-color: #334155;
+
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .emi-date-modal input[type="date"]:focus {
+  border-color: #64748b;
+}
+
+[data-theme="dark"] .emi-date-actions button:first-child {
+  background: #263244;
+
+  border-color: #475569;
+
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .emi-date-actions button:last-child {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* =====================================================
+   FULL SETTLEMENT
+   ===================================================== */
+
+[data-theme="dark"] .pay-total-button {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+[data-theme="dark"] .pay-total-button:hover {
+  background: #e2e8f0;
+}
+
+[data-theme="dark"] .settlement-note {
+  color: #94a3b8;
+}
+
+/* =====================================================
+   VIEW FINANCE / EMI PROGRESS
+   ===================================================== */
+
+[data-theme="dark"] .emi-progress-grid > div {
+  background: #172033;
+
+  border-color: #334155;
+}
+
+[data-theme="dark"] .emi-progress-grid span {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .emi-progress-grid strong {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .next-emi-box {
+  background: #111c30;
+
+  border-color: #334155;
+}
+
+[data-theme="dark"] .next-emi-box span {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .next-emi-box strong,
+[data-theme="dark"] .next-emi-box small {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .emi-schedule-title h3 {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .emi-schedule-title p {
+  color: #64748b;
+}
+
+/* ViewFinance EMI cards */
+
+[data-theme="dark"] .emi-card {
+  background: #111827;
+
+  border-color: #334155;
+}
+
+[data-theme="dark"] .emi-date {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .emi-number {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .emi-amount {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .emi-card.upcoming {
+  background: #111827;
+}
+
+[data-theme="dark"] .emi-card.upcoming .emi-status {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .emi-card.due-today {
+  background: #332a0d;
+  border-color: #a16207;
+}
+
+[data-theme="dark"] .emi-card.due-today .emi-status {
+  color: #fcd34d;
+}
+
+[data-theme="dark"] .emi-card.overdue {
+  background: #35171b;
+  border-color: #991b1b;
+}
+
+[data-theme="dark"] .emi-card.overdue .emi-status {
+  color: #fca5a5;
+}
+
+[data-theme="dark"] .emi-card.paid {
+  background: #10291c;
+  border-color: #166534;
+}
+
+[data-theme="dark"] .emi-card.paid .emi-status {
+  color: #86efac;
+}
+
+[data-theme="dark"] .emi-card.partial {
+  background: #142447;
+  border-color: #1d4ed8;
+}
+
+[data-theme="dark"] .emi-card.partial .emi-status {
+  color: #93c5fd;
+}
+
+[data-theme="dark"] .emi-card.settled {
+  background: #242b36;
+  border-color: #475569;
+}
+
+[data-theme="dark"] .emi-card.settled .emi-status {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .emi-loading,
+[data-theme="dark"] .emi-empty {
+  color: #94a3b8;
+}
+
+/* =====================================================
+   AUTH PAGES
+   ===================================================== */
+
+[data-theme="dark"] .auth-page {
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(37, 99, 235, 0.12),
+      transparent 35%
+    ),
+    #0b1120;
+}
+
+[data-theme="dark"] .auth-card {
+  background: #172033;
+
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .auth-card h1 {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .auth-subtitle,
+[data-theme="dark"] .auth-switch {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .form-group label {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .form-group input {
+  background: #0f172a;
+
+  border-color: #334155;
+
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .form-group input::placeholder {
+  color: #64748b;
+}
+
+[data-theme="dark"] .password-toggle {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .form-group p {
+  color: #86efac;
+}
+
+/* =====================================================
+   DATE INPUT ICONS
+   ===================================================== */
+
+[data-theme="dark"] input[type="date"] {
+  color-scheme: dark;
+}
+
+/* =====================================================
+   SCROLLBAR
+   ===================================================== */
+
+[data-theme="dark"] ::-webkit-scrollbar {
+  width: 8px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}

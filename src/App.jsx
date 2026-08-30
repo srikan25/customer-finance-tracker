@@ -6,10 +6,21 @@ import { useEffect, useState } from "react";
 import { supabase } from "./lib/supabase";
 import FinanceDetails from "./pages/FinanceDetails";
 import Login from "./pages/Login.jsx";
+import "./styles/darkMode.css";
 
 function App() {
   const [session, setSession] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  };
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   useEffect(() => {
     const getSession = async () => {
@@ -62,7 +73,11 @@ function App() {
             path="/"
             element={
               session ? (
-                <Dashboard session={session} />
+                <Dashboard
+                  session={session}
+                  toggleTheme={toggleTheme}
+                  theme={theme}
+                />
               ) : (
                 <Navigate to="/login" replace />
               )
@@ -72,7 +87,11 @@ function App() {
           <Route
             path="/finance/:loanId"
             element={
-              session ? <FinanceDetails /> : <Navigate to="/login" replace />
+              session ? (
+                <FinanceDetails toggleTheme={toggleTheme} theme={theme} />
+              ) : (
+                <Navigate to="/login" replace />
+              )
             }
           />
         </Routes>

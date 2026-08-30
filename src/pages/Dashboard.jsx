@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-const Dashboard = ({ session }) => {
+const Dashboard = ({ session, toggleTheme, theme }) => {
   const [customers, setCustomers] = useState([]);
   const [showAddCustomer, setShowAddCustomer] = useState(false);
 
@@ -793,6 +793,15 @@ const Dashboard = ({ session }) => {
           </button>
         </>
       )}
+
+      <button
+        type="button"
+        className="theme-toggle-btn"
+        onClick={toggleTheme}
+        aria-label="Toggle theme"
+      >
+        {theme === "light" ? "🌙" : "☀️"}
+      </button>
 
       {/* =========================
           ADD CUSTOMER

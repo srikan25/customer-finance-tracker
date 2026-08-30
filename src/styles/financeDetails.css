@@ -800,3 +800,27 @@
 
   color: #6b7280;
 }
+
+.theme-toggle-btn {
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.18);
+
+  font-size: 20px;
+  cursor: pointer;
+
+  z-index: 900;
+}
